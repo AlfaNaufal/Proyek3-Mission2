@@ -1,0 +1,150 @@
+/* General Styling */
+body {
+    background-color: #f4f7f9;
+    margin: 0;
+    padding: 20px;
+    color: #333;
+}
+
+/* Container to center content */
+.container {
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+/* Card component styling */
+.card {
+    background-color: #ffffff;
+    border: 1px solid #e0e0e0;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+    overflow: hidden;
+    /* Ensures child elements conform to border radius */
+}
+
+.card-header {
+    background-color: #ff7300;
+    color: white;
+    padding: 1rem;
+    text-align: center;
+    font-weight: 600;
+}
+
+.card-body {
+    padding: 1.5rem;
+}
+
+.card-footer {
+    background-color: #f8f9fa;
+    padding: 1rem;
+    text-align: center;
+    color: #6c757d;
+    border-top: 1px solid #e0e0e0;
+}
+
+/* Action Row: Search and Add Button */
+.action-row {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    /* Allows items to wrap on smaller screens */
+    gap: 1rem;
+    margin-bottom: 1.5rem;
+}
+
+.search-form {
+    display: flex;
+    flex-grow: 1;
+    /* Allows form to take available space */
+    min-width: 250px;
+}
+
+.search-input {
+    width: 100%;
+    padding: 0.6rem;
+    border: 1px solid #ccc;
+    border-radius: 4px 0 0 4px;
+}
+
+.search-button {
+    border: 1px solid #007bff;
+    background-color: #007bff;
+    color: white;
+}
+
+/* Button Styling */
+.btn {
+    padding: 0.6rem 1.2rem;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    text-decoration: none;
+    display: inline-block;
+    font-weight: 500;
+    white-space: nowrap;
+}
+
+.btn-success {
+    background-color: #28a745;
+    color: white;
+}
+
+.btn-info {
+    background-color: #17a2b8;
+    color: white;
+}
+
+.btn-warning {
+    background-color: #ff7300;
+    color: white;
+}
+
+.btn-danger {
+    background-color: #dc3545;
+    color: white;
+}
+
+/* Table Styling */
+.table-container {
+    width: 100%;
+    overflow-x: auto;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th,
+td {
+    padding: 0.75rem;
+    border: 1px solid #dee2e6;
+    text-align: left;
+}
+
+thead {
+    background-color: #343a40;
+    color: white;
+}
+
+tbody tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+tbody tr:hover {
+    background-color: #e9ecef;
+}
+
+.text-center {
+    text-align: center;
+}
+
+/* Responsive adjustments */
+@media (max-width: 600px) {
+    .action-row {
+        flex-direction: column;
+        align-items: stretch;
+    }
+}
